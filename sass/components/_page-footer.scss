@@ -1,0 +1,155 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    max-width: 1600px;
+    background-color: #2f303a;
+}
+
+.page-footer__container {
+    display: flex;
+}
+
+.address {
+    display: flex;
+    margin-right: auto;
+}
+
+.address__list {
+    display: inline-block;
+    padding-left: 0;
+
+    & .link:hover,
+    & .link:focus {
+    color: var(--accent-color);
+    }
+}
+
+.place-text {
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .link:hover>&,
+    .link:focus>& {
+     color: var(--accent-color);
+    }
+}
+
+.address__contacts .link {
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.address__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.networks__item {
+    margin-right: 10px;
+
+    &:last-child {
+    margin-right: 0;
+    }
+    
+    &:nth-child(4n) {
+    margin-right: 0;
+    }
+}
+
+.networks__link--bottom {
+    background: rgba(255, 255, 255, 0.1);
+
+    outline: none;
+
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.networks__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--join {
+    fill: #ffffff;
+    transition: none;
+    }
+}
+
+.networks__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    outline: none;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+
+        & .networks__icon,
+        & .networks__icon {
+            fill: #ffffff;
+        }
+    }
+}
+
+.networks {
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 32px;
+    margin-left: 32px;
+    padding: 0;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-left: 70px;
+}
+
+.networks--bottom {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.social__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}

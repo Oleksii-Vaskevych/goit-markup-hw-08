@@ -1,0 +1,21 @@
+.cotnract__label>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    margin-right: 7px;
+    fill: transparent;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .cotnract__checkbox:checked+& {
+        background-color: var(--accent-color);
+        border-color: transparent;
+        fill: #ffffff;
+        }
+}
